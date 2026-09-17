@@ -1,1 +1,4 @@
-<template><NuxtPage /></template>
+<template>
+  <NuxtPage />
+  <FloatingWhatsapp />
+</template>
