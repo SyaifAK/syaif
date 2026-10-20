@@ -52,6 +52,10 @@ export const portfolio: Project[] = [
   {
     id: 13, title: 'AI UGC Fashion', category: 'AI Product Commercial', description: 'An AI UGC fashion commercial that combines an authentic creator-style presentation with a polished product showcase.', tools: ['Capcut', 'Omni Flash', 'Google Flow'], tone: 'citrus', type: 'ai',
     videoUrl: 'https://youtube.com/shorts/otWNsUjCpJE?feature=share' // Paste link video proyek 5 di sini.
+  },
+  {
+    id: 14, title: 'AI UGC Property', category: 'AI Real Estate Commercial', description: 'An AI UGC-style property commercial that presents the space through a natural, creator-led walkthrough with polished real-estate visuals.', tools: ['Capcut', 'Omni Flash', 'Google Flow'], tone: 'citrus', type: 'ai',
+    videoUrl: 'https://youtube.com/shorts/tkK4wb03Z0g?feature=share' // Paste link video proyek 5 di sini.
   }
 ]
 

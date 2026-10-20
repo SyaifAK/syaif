@@ -3,14 +3,16 @@ import { portfolio } from '~/data/portfolio'
 const selected = ref<typeof portfolio[number] | null>(null)
 const showBeforeAfter = false
 const selectedWorkProjects = [
-  ...portfolio.slice(0, 3),
+  ...portfolio.filter(project => [1, 2, 14].includes(project.id)),
   ...portfolio.filter(project => project.type === 'editing').slice(1, 4),
 ]
 const selectedWorkVideoUrls = new Set(selectedWorkProjects.map(project => project.videoUrl))
 const editingProjects = portfolio.filter(
   project => project.type === 'editing' && !selectedWorkVideoUrls.has(project.videoUrl),
 )
-const aiProjects = portfolio.filter(project => project.type === 'ai' && !project.featured)
+const aiProjects = portfolio.filter(
+  project => project.type === 'ai' && !project.featured && !selectedWorkVideoUrls.has(project.videoUrl),
+)
 </script>
 
 <template>
